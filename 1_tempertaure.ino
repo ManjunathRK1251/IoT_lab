@@ -17,7 +17,7 @@ void loop()
     val = analogRead(tempPin);
 
 
-    float mv=val/1024;
+    float mv= (val/1024.0) * 5000;
     float cel = mv/10;
     float farh = (cel*9)/5 + 32;
 
