@@ -21,6 +21,7 @@ void loop()
         Serial.println(val); //print current value 
         delay(1); 
     }
+    
     for(val = 0; val < 255; val++)
     {
         analogWrite(redpin, val);
